@@ -16,6 +16,7 @@ using Microsoft.Extensions.Hosting;
 var host = new HostBuilder()
     .ConfigureFunctionsWorkerDefaults(worker =>
     {
+        worker.UseMiddleware<ExceptionMiddleware>();
         worker.UseWhen<AuthMiddleware>((context) =>
         {
             // We want to use this middleware only for http trigger invocations.

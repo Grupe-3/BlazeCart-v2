@@ -13,16 +13,6 @@ namespace BLZ.Functions.Extensions
         static public async Task<HttpResponseData> Ok(this HttpRequestData req, string data)
         {
             var resp = req.CreateResponse(HttpStatusCode.OK);
-
-            /* TODO: If local - gzip manually */
-            /*
-            bool isLocal = string.IsNullOrEmpty(Environment.GetEnvironmentVariable("WEBSITE_INSTANCE_ID"));
-            if (!isLocal)
-            {
-                resp.Headers.Add("Content-Encoding", "gzip");
-            }
-            */
-
             await resp.WriteStringAsync(data);
             return resp;
         }
@@ -30,16 +20,6 @@ namespace BLZ.Functions.Extensions
         static public async Task<HttpResponseData> OkResp<T>(this HttpRequestData req, T data)
         {
             var resp = req.CreateResponse(HttpStatusCode.OK);
-
-            /* TODO: If local - gzip manually */
-            /*
-            bool isLocal = string.IsNullOrEmpty(Environment.GetEnvironmentVariable("WEBSITE_INSTANCE_ID"));
-            if (!isLocal)
-            {
-                resp.Headers.Add("Content-Encoding", "gzip");
-            }
-            */
-
             await resp.WriteAsJsonAsync(data);
             return resp;
         }

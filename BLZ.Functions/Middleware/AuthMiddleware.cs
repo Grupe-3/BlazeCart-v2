@@ -27,11 +27,20 @@ namespace BLZ.Functions.Middleware
 
             if (await _authService.IsAuthorized(requestData!) == false)
             {
-                throw new AuthenticationException("Failed to authenticate");
+                if (EnvExt.IsLocal())
+                {
+                    await next(context);
+                }
+                else
+                {
+                    throw new AuthenticationException("Failed to authenticate");
+                }
             }
-
-            context.AddToken((await _authService.GetPrincipal(requestData!))!);
-            await next(context);
+            else
+            {
+                context.AddToken((await _authService.GetPrincipal(requestData!))!);
+                await next(context);
+            }
         }
     }
 }
