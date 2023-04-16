@@ -1,0 +1,1757 @@
+[
+  {
+    "CategoryName": "Cukrus ir druska",
+    "ItemMatcher": [
+      {
+        "Pattern": "cukrus",
+        "ReplacementCategory": "Cukrus, saldikliai ir druska"
+      },
+      {
+        "Pattern": "cukraus",
+        "ReplacementCategory": "Cukrus, saldikliai ir druska"
+      },
+      {
+        "Pattern": "saldiklis",
+        "ReplacementCategory": "Cukrus, saldikliai ir druska"
+      },
+      {
+        "Pattern": "fruktozė",
+        "ReplacementCategory": "Cukrus, saldikliai ir druska"
+      },
+      {
+        "Pattern": "saldiklių",
+        "ReplacementCategory": "Cukrus, saldikliai ir druska"
+      },
+      {
+        "Pattern": "druska",
+        "ReplacementCategory": "Cukrus, saldikliai ir druska"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Kruopos",
+    "ItemMatcher": [
+      {
+        "Pattern": "grikiai",
+        "ReplacementCategory": "Grikiai"
+      },
+      {
+        "Pattern": "grikių",
+        "ReplacementCategory": "Grikiai"
+      },
+      {
+        "Pattern": "perlinės",
+        "ReplacementCategory": "Perlinės kruopos"
+      },
+      {
+        "Pattern": "avinžirniai",
+        "ReplacementCategory": "Kitos kruopos"
+      },
+      {
+        "Pattern": "avinžiniai",
+        "ReplacementCategory": "Kitos kruopos"
+      },
+      {
+        "Pattern": "avižinės",
+        "ReplacementCategory": "Kitos kruopos"
+      },
+      {
+        "Pattern": "avižinė",
+        "ReplacementCategory": "Kitos kruopos"
+      },
+      {
+        "Pattern": "chia",
+        "ReplacementCategory": "Kitos kruopos"
+      },
+      {
+        "Pattern": "sorų",
+        "ReplacementCategory": "Kitos kruopos"
+      },
+      {
+        "Pattern": "perlinės",
+        "ReplacementCategory": "Kitos kruopos"
+      },
+      {
+        "Pattern": "linų",
+        "ReplacementCategory": "Kitos kruopos"
+      },
+      {
+        "Pattern": "kanapių",
+        "ReplacementCategory": "Kitos kruopos"
+      },
+      {
+        "Pattern": "kuskusas",
+        "ReplacementCategory": "Kitos kruopos"
+      },
+      {
+        "Pattern": "lęšiai",
+        "ReplacementCategory": "Kitos kruopos"
+      },
+      {
+        "Pattern": "baltos pupupelės",
+        "ReplacementCategory": "Kukurūzai, žirniai, pupelės ir smidrai"
+      },
+      {
+        "Pattern": "raudonosios pupupelės",
+        "ReplacementCategory": "Kukurūzai, žirniai, pupelės ir smidrai"
+      },
+      {
+        "Pattern": "žirniai",
+        "ReplacementCategory": "Kitos kruopos"
+      },
+      {
+        "Pattern": "kukurūzų",
+        "ReplacementCategory": "Kitos kruopos"
+      },
+      {
+        "Pattern": "manų",
+        "ReplacementCategory": "Manų kruopos"
+      },
+      {
+        "Pattern": "miežinės",
+        "ReplacementCategory": "Kvietinės ir miežinės kruopos"
+      },
+      {
+        "Pattern": "kvietinės",
+        "ReplacementCategory": "Kvietinės ir miežinės kruopos"
+      },
+      {
+        "Pattern": "basmati",
+        "ReplacementCategory": "Basmati ir kvapieji ryžiai"
+      },
+      {
+        "Pattern": "plikyti ryžiai",
+        "ReplacementCategory": "Plikyti ryžiai"
+      },
+      {
+        "Pattern": "ilgagrūdžiai",
+        "ReplacementCategory": "Ilgagrūdžiai ryžiai"
+      },
+      {
+        "Pattern": "rudi ilgagrūdžiai",
+        "ReplacementCategory": "Rudieji ir laukiniai ryžiai"
+      },
+      {
+        "Pattern": "juodieji",
+        "ReplacementCategory": "Rudieji ir laukiniai ryžiai"
+      },
+      {
+        "Pattern": "trumpagrūdžiai ryžiai",
+        "ReplacementCategory": "Trumpagrūdžiai ir apvaliagrūdžiai ryžiai"
+      },
+      {
+        "Pattern": "apvaliagrūdžiai ryžiai",
+        "ReplacementCategory": "Trumpagrūdžiai ir apvaliagrūdžiai ryžiai"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Sėklos",
+    "ItemMatcher": [
+      {
+        "Pattern": "moliūgų sėklos",
+        "ReplacementCategory": "Sėklos"
+      },
+      {
+        "Pattern": "saulėgrąžų sėklos",
+        "ReplacementCategory": "Sėklos"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Miltai",
+    "ItemMatcher": [
+      {
+        "Pattern": "kvietiniai miltai",
+        "ReplacementCategory": "Kvietiniai miltai"
+      },
+      {
+        "Pattern": "migdolų miltai",
+        "ReplacementCategory": "Kiti miltai"
+      },
+      {
+        "Pattern": "miltinis mišinys",
+        "ReplacementCategory": "Miltiniai mišiniai"
+      },
+      {
+        "Pattern": "grūdo",
+        "ReplacementCategory": "Pilno grūdo miltai"
+      },
+      {
+        "Pattern": "ruginiai miltai",
+        "ReplacementCategory": "Pilno grūdo miltai"
+      },
+      {
+        "Pattern": "kukurūzų miltai",
+        "ReplacementCategory": "Kiti miltai"
+      },
+      {
+        "Pattern": "ryžių miltai",
+        "ReplacementCategory": "Kiti miltai"
+      },
+      {
+        "Pattern": "avinžirnių miltai",
+        "ReplacementCategory": "Kiti miltai"
+      },
+      {
+        "Pattern": "žemės riešutų miltai",
+        "ReplacementCategory": "Kiti miltai"
+      },
+      {
+        "Pattern": "speltos miltai",
+        "ReplacementCategory": "Kiti miltai"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Aliejus ir actas",
+    "ItemMatcher": [
+      {
+        "Pattern": "saulėgrąžų aliejus",
+        "ReplacementCategory": "Saulėgrąžų aliejus"
+      },
+      {
+        "Pattern": "rapsų aliejus",
+        "ReplacementCategory": "Rapsų aliejus"
+      },
+      {
+        "Pattern": "actas",
+        "ReplacementCategory": "Actas ir koncentruotos citrinų sultys"
+      },
+      {
+        "Pattern": "acto",
+        "ReplacementCategory": "Actas ir koncentruotos citrinų sultys"
+      },
+      {
+        "Pattern": "citrinų sultys",
+        "ReplacementCategory": "Actas ir koncentruotos citrinų sultys"
+      },
+      {
+        "Pattern": "alyvuogių aliejus",
+        "ReplacementCategory": "Alyvuogių aliejus"
+      },
+      {
+        "Pattern": "kokosų aliejus",
+        "ReplacementCategory": "Kokosų aliejus"
+      },
+      {
+        "Pattern": "linų sėmenų aliejus",
+        "ReplacementCategory": "Kitas aliejus"
+      },
+      {
+        "Pattern": "moliūgų sėklų aliejus",
+        "ReplacementCategory": "Kitas aliejus"
+      },
+      {
+        "Pattern": "vynuogių kauliukų aliejus",
+        "ReplacementCategory": "Kitas aliejus"
+      },
+      {
+        "Pattern": "graikinių riešutų aliejus",
+        "ReplacementCategory": "Kitas aliejus"
+      },
+      {
+        "Pattern": "sezamų aliejus",
+        "ReplacementCategory": "Kitas aliejus"
+      },
+      {
+        "Pattern": "migdolų aliejus",
+        "ReplacementCategory": "Kitas aliejus"
+      },
+      {
+        "Pattern": "kanapių aliejus",
+        "ReplacementCategory": "Kitas aliejus"
+      },
+      {
+        "Pattern": "ryžių aliejus",
+        "ReplacementCategory": "Kitas aliejus"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Makaronai",
+    "ItemMatcher": [
+      {
+        "Pattern": "makaronai",
+        "ReplacementCategory": "Ilgieji ir plokštieji makaronai"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Padažai",
+    "ItemMatcher": [
+      {
+        "Pattern": "pomidorų padažas",
+        "ReplacementCategory": "Pomidorų padažai ir pasta"
+      },
+      {
+        "Pattern": "adžika",
+        "ReplacementCategory": "Pomidorų padažai ir pasta"
+      },
+      {
+        "Pattern": "kečupas",
+        "ReplacementCategory": "Kečupai"
+      },
+      {
+        "Pattern": "ketchup",
+        "ReplacementCategory": "Kečupai"
+      },
+      {
+        "Pattern": "krienai",
+        "ReplacementCategory": "Krienai"
+      },
+      {
+        "Pattern": "garstyčios",
+        "ReplacementCategory": "Garstyčios"
+      },
+      {
+        "Pattern": "garstyčių",
+        "ReplacementCategory": "Garstyčios"
+      },
+      {
+        "Pattern": "majonezinis",
+        "ReplacementCategory": "Majoneziniai padažai"
+      },
+      {
+        "Pattern": "sadžiarūgštis",
+        "ReplacementCategory": "Majoneziniai padažai"
+      },
+      {
+        "Pattern": "pesto",
+        "ReplacementCategory": "Kiti padažai"
+      },
+      {
+        "Pattern": "cezario",
+        "ReplacementCategory": "Kiti padažai"
+      },
+      {
+        "Pattern": "česnakinis",
+        "ReplacementCategory": "Kiti padažai"
+      },
+      {
+        "Pattern": "bolonijos",
+        "ReplacementCategory": "Kiti padažai"
+      },
+      {
+        "Pattern": "vorčesterio",
+        "ReplacementCategory": "Kiti padažai"
+      },
+      {
+        "Pattern": "mėsainių",
+        "ReplacementCategory": "Kiti padažai"
+      },
+      {
+        "Pattern": "mėsainiams",
+        "ReplacementCategory": "Kiti padažai"
+      },
+      {
+        "Pattern": "barbekiu",
+        "ReplacementCategory": "Kiti padažai"
+      },
+      {
+        "Pattern": "salotų padažas",
+        "ReplacementCategory": "Kiti padažai"
+      },
+      {
+        "Pattern": "salsa",
+        "ReplacementCategory": "Kiti padažai"
+      },
+      {
+        "Pattern": "sojų",
+        "ReplacementCategory": "Sojų padažai"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Tortai, pyragai",
+    "ItemMatcher": [
+      {
+        "Pattern": "vyniotinis",
+        "ReplacementCategory": "Plokštainiai ir vyniotiniai"
+      },
+      {
+        "Pattern": "pyragas",
+        "ReplacementCategory": "Plokštainiai ir vyniotiniai"
+      },
+      {
+        "Pattern": "tartaletė",
+        "ReplacementCategory": "Plokštainiai ir vyniotiniai"
+      },
+      {
+        "Pattern": "šakotis",
+        "ReplacementCategory": "Šakočiai ir skruzdėlynai"
+      },
+      {
+        "Pattern": "skurzdėlynas",
+        "ReplacementCategory": "Šakočiai ir skruzdėlynai"
+      },
+      {
+        "Pattern": "tortas",
+        "ReplacementCategory": "Tortai"
+      },
+      {
+        "Pattern": "torto",
+        "ReplacementCategory": "Tortai"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Duona",
+    "ItemMatcher": [
+      {
+        "Pattern": "sumuštinių duona",
+        "ReplacementCategory": "Sumuštinių duona ir duonelės"
+      },
+      {
+        "Pattern": "skrudinimui",
+        "ReplacementCategory": "Sumuštinių duona ir duonelės"
+      },
+      {
+        "Pattern": "duonelė",
+        "ReplacementCategory": "Sumuštinių duona ir duonelės"
+      },
+      {
+        "Pattern": "duonelės",
+        "ReplacementCategory": "Sumuštinių duona ir duonelės"
+      },
+      {
+        "Pattern": "skrudinamoji duona",
+        "ReplacementCategory": "Sumuštinių duona ir duonelės"
+      },
+      {
+        "Pattern": "batonas",
+        "ReplacementCategory": "Batonas"
+      },
+      {
+        "Pattern": "tamsi",
+        "ReplacementCategory": "Tamsi duona"
+      },
+      {
+        "Pattern": "juoda",
+        "ReplacementCategory": "Tamsi duona"
+      },
+      {
+        "Pattern": "bočių",
+        "ReplacementCategory": "Tamsi duona"
+      },
+      {
+        "Pattern": "viso grūdo",
+        "ReplacementCategory": "Tamsi duona"
+      },
+      {
+        "Pattern": "ruginė",
+        "ReplacementCategory": "Tamsi duona"
+      },
+      {
+        "Pattern": "ajerų",
+        "ReplacementCategory": "Tamsi duona"
+      },
+      {
+        "Pattern": "šviesi",
+        "ReplacementCategory": "Šviesi duona"
+      },
+      {
+        "Pattern": "duona",
+        "ReplacementCategory": "Tamsi duona"
+      },
+      {
+        "Pattern": "kvietinė",
+        "ReplacementCategory": "Šviesi duona"
+      },
+      {
+        "Pattern": "batonas",
+        "ReplacementCategory": "Batonas"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Bandelės",
+    "ItemMatcher": [
+      {
+        "Pattern": "bandelės",
+        "ReplacementCategory": "Saldžios bandelės"
+      },
+      {
+        "Pattern": "grietinėtis",
+        "ReplacementCategory": "Saldžios bandelės"
+      },
+      {
+        "Pattern": "kruasanas",
+        "ReplacementCategory": "Saldžios bandelės"
+      },
+      {
+        "Pattern": "keksiukai",
+        "ReplacementCategory": "Saldžios bandelės"
+      },
+      {
+        "Pattern": "spurgos",
+        "ReplacementCategory": "Saldžios bandelės"
+      },
+      {
+        "Pattern": "spurga",
+        "ReplacementCategory": "Saldžios bandelės"
+      },
+      {
+        "Pattern": "spurgytės",
+        "ReplacementCategory": "Saldžios bandelės"
+      },
+      {
+        "Pattern": "raguolis",
+        "ReplacementCategory": "Saldžios bandelės"
+      },
+      {
+        "Pattern": "ragelis",
+        "ReplacementCategory": "Saldžios bandelės"
+      },
+      {
+        "Pattern": "raguoliai",
+        "ReplacementCategory": "Saldžios bandelės"
+      },
+      {
+        "Pattern": "bandelė",
+        "ReplacementCategory": "Saldžios bandelės"
+      },
+      {
+        "Pattern": "riestainiai",
+        "ReplacementCategory": "Saldžios bandelės"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Kiti duonos gaminiai",
+    "ItemMatcher": [
+      {
+        "Pattern": "fokačija",
+        "ReplacementCategory": "Kiti duonos gaminiai"
+      },
+      {
+        "Pattern": "picos padas",
+        "ReplacementCategory": "Trapučiai ir kiti paplotėliai"
+      },
+      {
+        "Pattern": "pynė",
+        "ReplacementCategory": "Kiti duonos gaminiai"
+      },
+      {
+        "Pattern": "traškutis",
+        "ReplacementCategory": "Kiti duonos gaminiai"
+      },
+      {
+        "Pattern": "traškučiai",
+        "ReplacementCategory": "Kiti duonos gaminiai"
+      },
+      {
+        "Pattern": "sumuštinis",
+        "ReplacementCategory": "Kiti duonos gaminiai"
+      },
+      {
+        "Pattern": "mėsainis",
+        "ReplacementCategory": "Kiti duonos gaminiai"
+      },
+      {
+        "Pattern": "džiūvėsiai",
+        "ReplacementCategory": "Kiti duonos gaminiai"
+      },
+      {
+        "Pattern": "kepta duona",
+        "ReplacementCategory": "Kiti duonos gaminiai"
+      },
+      {
+        "Pattern": "submarinas",
+        "ReplacementCategory": "Kiti duonos gaminiai"
+      },
+      {
+        "Pattern": "panini",
+        "ReplacementCategory": "Kiti duonos gaminiai"
+      },
+      {
+        "Pattern": "keksai",
+        "ReplacementCategory": "Kiti duonos gaminiai"
+      },
+      {
+        "Pattern": "duonos lazdelės",
+        "ReplacementCategory": "Kiti duonos gaminiai"
+      },
+      {
+        "Pattern": "kibinas",
+        "ReplacementCategory": "Kiti duonos gaminiai"
+      },
+      {
+        "Pattern": "trapučiai",
+        "ReplacementCategory": "Trapučiai ir kiti paplotėliai"
+      },
+      {
+        "Pattern": "konditeriniai krepšeliai",
+        "ReplacementCategory": "Trapučiai ir kiti paplotėliai"
+      },
+      {
+        "Pattern": "trapukai",
+        "ReplacementCategory": "Trapučiai ir kiti paplotėliai"
+      },
+      {
+        "Pattern": "paplotėliai",
+        "ReplacementCategory": "Trapučiai ir kiti paplotėliai"
+      },
+      {
+        "Pattern": "lavašas",
+        "ReplacementCategory": "Trapučiai ir kiti paplotėliai"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Konditerijos gaminiai",
+    "ItemMatcher": [
+      {
+        "Pattern": "kanelės",
+        "ReplacementCategory": "Pyragaičiai ir desertai"
+      },
+      {
+        "Pattern": "ekleras",
+        "ReplacementCategory": "Pyragaičiai ir desertai"
+      },
+      {
+        "Pattern": "pyragėlis",
+        "ReplacementCategory": "Pyragaičiai ir desertai"
+      },
+      {
+        "Pattern": "pyragaitis",
+        "ReplacementCategory": "Pyragaičiai ir desertai"
+      },
+      {
+        "Pattern": "desertas",
+        "ReplacementCategory": "Pyragaičiai ir desertai"
+      },
+      {
+        "Pattern": "kūčiukai",
+        "ReplacementCategory": "Pyragaičiai ir desertai"
+      },
+      {
+        "Pattern": "riestainėliai",
+        "ReplacementCategory": "Pyragaičiai ir desertai"
+      },
+      {
+        "Pattern": "rageliai",
+        "ReplacementCategory": "Pyragaičiai ir desertai"
+      },
+      {
+        "Pattern": "žagarėliai",
+        "ReplacementCategory": "Pyragaičiai ir desertai"
+      },
+      {
+        "Pattern": "biskvitas",
+        "ReplacementCategory": "Pyragaičiai ir desertai"
+      },
+      {
+        "Pattern": "pynė",
+        "ReplacementCategory": "Pyragaičiai ir desertai"
+      },
+      {
+        "Pattern": "pynutė",
+        "ReplacementCategory": "Pyragaičiai ir desertai"
+      },
+      {
+        "Pattern": "sausainiai",
+        "ReplacementCategory": "Pyragaičiai ir desertai"
+      },
+      {
+        "Pattern": "sausučiai",
+        "ReplacementCategory": "Pyragaičiai ir desertai"
+      },
+      {
+        "Pattern": "javainiai",
+        "ReplacementCategory": "Pyragaičiai ir desertai"
+      },
+      {
+        "Pattern": "javinukai",
+        "ReplacementCategory": "Pyragaičiai ir desertai"
+      },
+      {
+        "Pattern": "zefyrai",
+        "ReplacementCategory": "Pyragaičiai ir desertai"
+      },
+      {
+        "Pattern": "sausainis",
+        "ReplacementCategory": "Pyragaičiai ir desertai"
+      },
+      {
+        "Pattern": "vafliai",
+        "ReplacementCategory": "Pyragaičiai ir desertai"
+      },
+      {
+        "Pattern": "vafliniai",
+        "ReplacementCategory": "Pyragaičiai ir desertai"
+      },
+      {
+        "Pattern": "meduoliai",
+        "ReplacementCategory": "Meduoliai"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Grybai",
+    "ItemMatcher": [
+      {
+        "Pattern": "pievagrybiai",
+        "ReplacementCategory": "Grybai"
+      },
+      {
+        "Pattern": "grybai",
+        "ReplacementCategory": "Grybai"
+      },
+      {
+        "Pattern": "kreivabudės",
+        "ReplacementCategory": "Grybai"
+      },
+      {
+        "Pattern": "baravykas",
+        "ReplacementCategory": "Grybai"
+      },
+      {
+        "Pattern": "voveraitės",
+        "ReplacementCategory": "Grybai"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Daržovės",
+    "ItemMatcher": [
+      {
+        "Pattern": "morkos",
+        "ReplacementCategory": "Bulvės, morkos ir kopūstai"
+      },
+      {
+        "Pattern": "morkytės",
+        "ReplacementCategory": "Bulvės, morkos ir kopūstai"
+      },
+      {
+        "Pattern": "bulvės",
+        "ReplacementCategory": "Bulvės, morkos ir kopūstai"
+      },
+      {
+        "Pattern": "bulvių",
+        "ReplacementCategory": "Bulvės, morkos ir kopūstai"
+      },
+      {
+        "Pattern": "kopūstai",
+        "ReplacementCategory": "Bulvės, morkos ir kopūstai"
+      },
+      {
+        "Pattern": "agurkai",
+        "ReplacementCategory": "Pomidorai ir agurkai"
+      },
+      {
+        "Pattern": "pomidorai",
+        "ReplacementCategory": "Pomidorai ir agurkai"
+      },
+      {
+        "Pattern": "pomidoriukai",
+        "ReplacementCategory": "Pomidorai ir agurkai"
+      },
+      {
+        "Pattern": "svogūnai",
+        "ReplacementCategory": "Svogūnai, porai ir česnakai"
+      },
+      {
+        "Pattern": "svogūnų",
+        "ReplacementCategory": "Svogūnai, porai ir česnakai"
+      },
+      {
+        "Pattern": "laiškai",
+        "ReplacementCategory": "Svogūnai, porai ir česnakai"
+      },
+      {
+        "Pattern": "porai",
+        "ReplacementCategory": "Svogūnai, porai ir česnakai"
+      },
+      {
+        "Pattern": "česnakai",
+        "ReplacementCategory": "Svogūnai, porai ir česnakai"
+      },
+      {
+        "Pattern": "petražolės",
+        "ReplacementCategory": "Prieskoninės daržovės ir žolelės"
+      },
+      {
+        "Pattern": "petražolių",
+        "ReplacementCategory": "Prieskoninės daržovės ir žolelės"
+      },
+      {
+        "Pattern": "mėtos",
+        "ReplacementCategory": "Prieskoninės daržovės ir žolelės"
+      },
+      {
+        "Pattern": "mėta",
+        "ReplacementCategory": "Prieskoninės daržovės ir žolelės"
+      },
+      {
+        "Pattern": "bazilikai",
+        "ReplacementCategory": "Prieskoninės daržovės ir žolelės"
+      },
+      {
+        "Pattern": "šalavijai",
+        "ReplacementCategory": "Prieskoninės daržovės ir žolelės"
+      },
+      {
+        "Pattern": "rozmarinai",
+        "ReplacementCategory": "Prieskoninės daržovės ir žolelės"
+      },
+      {
+        "Pattern": "rozmarinas",
+        "ReplacementCategory": "Prieskoninės daržovės ir žolelės"
+      },
+      {
+        "Pattern": "kalendros",
+        "ReplacementCategory": "Prieskoninės daržovės ir žolelės"
+      },
+      {
+        "Pattern": "čiobreliai",
+        "ReplacementCategory": "Prieskoninės daržovės ir žolelės"
+      },
+      {
+        "Pattern": "čiobrelis",
+        "ReplacementCategory": "Prieskoninės daržovės ir žolelės"
+      },
+      {
+        "Pattern": "krapai",
+        "ReplacementCategory": "Prieskoninės daržovės ir žolelės"
+      },
+      {
+        "Pattern": "krapų",
+        "ReplacementCategory": "Prieskoninės daržovės ir žolelės"
+      },
+      {
+        "Pattern": "žalumynų",
+        "ReplacementCategory": "Prieskoninės daržovės ir žolelės"
+      },
+      {
+        "Pattern": "paprika",
+        "ReplacementCategory": "Paprikos ir baklažanai"
+      },
+      {
+        "Pattern": "paprikos",
+        "ReplacementCategory": "Paprikos ir baklažanai"
+      },
+      {
+        "Pattern": "baklažanai",
+        "ReplacementCategory": "Paprikos ir baklažanai"
+      },
+      {
+        "Pattern": "avokadai",
+        "ReplacementCategory": "Avokadai"
+      },
+      {
+        "Pattern": "salotų mišinys",
+        "ReplacementCategory": "Salotos ir jų mišiniai"
+      },
+      {
+        "Pattern": "daigai",
+        "ReplacementCategory": "Salotos ir jų mišiniai"
+      },
+      {
+        "Pattern": "salotos",
+        "ReplacementCategory": "Salotos ir jų mišiniai"
+      },
+      {
+        "Pattern": "špinatai",
+        "ReplacementCategory": "Salotos ir jų mišiniai"
+      },
+      {
+        "Pattern": "gražgarstė",
+        "ReplacementCategory": "Salotos ir jų mišiniai"
+      },
+      {
+        "Pattern": "būrokėliai",
+        "ReplacementCategory": "Būrokėliai ir kiti šakniavaisiai"
+      },
+      {
+        "Pattern": "imbierai",
+        "ReplacementCategory": "Būrokėliai ir kiti šakniavaisiai"
+      },
+      {
+        "Pattern": "imbieras",
+        "ReplacementCategory": "Būrokėliai ir kiti šakniavaisiai"
+      },
+      {
+        "Pattern": "burokėliai",
+        "ReplacementCategory": "Būrokėliai ir kiti šakniavaisiai"
+      },
+      {
+        "Pattern": "salierai",
+        "ReplacementCategory": "Būrokėliai ir kiti šakniavaisiai"
+      },
+      {
+        "Pattern": "ridikėliai",
+        "ReplacementCategory": "Būrokėliai ir kiti šakniavaisiai"
+      },
+      {
+        "Pattern": "ridikėlių",
+        "ReplacementCategory": "Būrokėliai ir kiti šakniavaisiai"
+      },
+      {
+        "Pattern": "ridikas",
+        "ReplacementCategory": "Būrokėliai ir kiti šakniavaisiai"
+      },
+      {
+        "Pattern": "kaliaropės",
+        "ReplacementCategory": "Būrokėliai ir kiti šakniavaisiai"
+      },
+      {
+        "Pattern": "kukurūzai",
+        "ReplacementCategory": "Kukurūzai, žirniai, pupelės ir smidrai"
+      },
+      {
+        "Pattern": "kukurūzų",
+        "ReplacementCategory": "Kukurūzai, žirniai, pupelės ir smidrai"
+      },
+      {
+        "Pattern": "žirniai",
+        "ReplacementCategory": "Kukurūzai, žirniai, pupelės ir smidrai"
+      },
+      {
+        "Pattern": "žirneliai",
+        "ReplacementCategory": "Kukurūzai, žirniai, pupelės ir smidrai"
+      },
+      {
+        "Pattern": "pupupelės",
+        "ReplacementCategory": "Kukurūzai, žirniai, pupelės ir smidrai"
+      },
+      {
+        "Pattern": "smidrai",
+        "ReplacementCategory": "Kukurūzai, žirniai, pupelės ir smidrai"
+      },
+      {
+        "Pattern": "smidrų",
+        "ReplacementCategory": "Kukurūzai, žirniai, pupelės ir smidrai"
+      },
+      {
+        "Pattern": "moliūgai",
+        "ReplacementCategory": "Moliūgai ir cukinijos"
+      },
+      {
+        "Pattern": "moliūgas",
+        "ReplacementCategory": "Moliūgai ir cukinijos"
+      },
+      {
+        "Pattern": "cukinija",
+        "ReplacementCategory": "Moliūgai ir cukinijos"
+      },
+      {
+        "Pattern": "cukinijos",
+        "ReplacementCategory": "Moliūgai ir cukinijos"
+      },
+      {
+        "Pattern": "brokoliai",
+        "ReplacementCategory": "Brokoliai"
+      },
+      {
+        "Pattern": "paprika",
+        "ReplacementCategory": "Paprikos ir baklažanai"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Vaisiai ir uogos",
+    "ItemMatcher": [
+      {
+        "Pattern": "bananai",
+        "ReplacementCategory": "Bananai"
+      },
+      {
+        "Pattern": "mandarinai",
+        "ReplacementCategory": "Citrusiniai vaisiai"
+      },
+      {
+        "Pattern": "citrinos",
+        "ReplacementCategory": "Citrusiniai vaisiai"
+      },
+      {
+        "Pattern": "greipfrutai",
+        "ReplacementCategory": "Citrusiniai vaisiai"
+      },
+      {
+        "Pattern": "klementinai",
+        "ReplacementCategory": "Citrusiniai vaisiai"
+      },
+      {
+        "Pattern": "apelsinai",
+        "ReplacementCategory": "Citrusiniai vaisiai"
+      },
+      {
+        "Pattern": "kiviai",
+        "ReplacementCategory": "Egzotiniai vaisiai"
+      },
+      {
+        "Pattern": "pasiflora",
+        "ReplacementCategory": "Egzotiniai vaisiai"
+      },
+      {
+        "Pattern": "pasiflorai",
+        "ReplacementCategory": "Egzotiniai vaisiai"
+      },
+      {
+        "Pattern": "mangai",
+        "ReplacementCategory": "Egzotiniai vaisiai"
+      },
+      {
+        "Pattern": "mangų",
+        "ReplacementCategory": "Egzotiniai vaisiai"
+      },
+      {
+        "Pattern": "datulės",
+        "ReplacementCategory": "Egzotiniai vaisiai"
+      },
+      {
+        "Pattern": "papajos",
+        "ReplacementCategory": "Egzotiniai vaisiai"
+      },
+      {
+        "Pattern": "ananasas",
+        "ReplacementCategory": "Egzotiniai vaisiai"
+      },
+      {
+        "Pattern": "kokoso",
+        "ReplacementCategory": "Egzotiniai vaisiai"
+      },
+      {
+        "Pattern": "kokosas",
+        "ReplacementCategory": "Egzotiniai vaisiai"
+      },
+      {
+        "Pattern": "persimonai",
+        "ReplacementCategory": "Egzotiniai vaisiai"
+      },
+      {
+        "Pattern": "granatai",
+        "ReplacementCategory": "Egzotiniai vaisiai"
+      },
+      {
+        "Pattern": "kinkanai",
+        "ReplacementCategory": "Egzotiniai vaisiai"
+      },
+      {
+        "Pattern": "obuoliai",
+        "ReplacementCategory": "Obuoliai ir kriaušės"
+      },
+      {
+        "Pattern": "kertuotis",
+        "ReplacementCategory": "Egzotiniai vaisiai"
+      },
+      {
+        "Pattern": "obuolys",
+        "ReplacementCategory": "Obuoliai ir kriaušės"
+      },
+      {
+        "Pattern": "kriaušės",
+        "ReplacementCategory": "Obuoliai ir kriaušės"
+      },
+      {
+        "Pattern": "kriaušė",
+        "ReplacementCategory": "Obuoliai ir kriaušės"
+      },
+      {
+        "Pattern": "vynuogės",
+        "ReplacementCategory": "Vynuogės ir uogos"
+      },
+      {
+        "Pattern": "gervuogės",
+        "ReplacementCategory": "Vynuogės ir uogos"
+      },
+      {
+        "Pattern": "avietės",
+        "ReplacementCategory": "Vynuogės ir uogos"
+      },
+      {
+        "Pattern": "šilauogės",
+        "ReplacementCategory": "Vynuogės ir uogos"
+      },
+      {
+        "Pattern": "spanguolės",
+        "ReplacementCategory": "Vynuogės ir uogos"
+      },
+      {
+        "Pattern": "melionai",
+        "ReplacementCategory": "Melionai"
+      },
+      {
+        "Pattern": "melionas",
+        "ReplacementCategory": "Melionai"
+      },
+      {
+        "Pattern": "arbūzas",
+        "ReplacementCategory": "Melionai"
+      },
+      {
+        "Pattern": "arbūzai",
+        "ReplacementCategory": "Melionai"
+      },
+      {
+        "Pattern": "persikas",
+        "ReplacementCategory": "Kaulavaisiai"
+      },
+      {
+        "Pattern": "abrikosas",
+        "ReplacementCategory": "Kaulavaisiai"
+      },
+      {
+        "Pattern": "slyva",
+        "ReplacementCategory": "Kaulavaisiai"
+      },
+      {
+        "Pattern": "slyvos",
+        "ReplacementCategory": "Kaulavaisiai"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Šviežia paukštiena",
+    "ItemMatcher": [
+      {
+        "Pattern": "vištiena",
+        "ReplacementCategory": "Vištiena"
+      },
+      {
+        "Pattern": "šviežias viščiukas",
+        "ReplacementCategory": "Vištiena"
+      },
+      {
+        "Pattern": "viščiukų",
+        "ReplacementCategory": "Vištiena"
+      },
+      {
+        "Pattern": "vištienos",
+        "ReplacementCategory": "Vištiena"
+      },
+      {
+        "Pattern": "broilerių",
+        "ReplacementCategory": "Vištiena"
+      },
+      {
+        "Pattern": "kalakutiena",
+        "ReplacementCategory": "Kalakutiena"
+      },
+      {
+        "Pattern": "kalakutų",
+        "ReplacementCategory": "Kalakutiena"
+      },
+      {
+        "Pattern": "kalakutienos",
+        "ReplacementCategory": "Kalakutiena"
+      },
+      {
+        "Pattern": "antiena",
+        "ReplacementCategory": "Antiena"
+      },
+      {
+        "Pattern": "antienos",
+        "ReplacementCategory": "Antienos"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Virtos mėsos gaminiai",
+    "ItemMatcher": [
+      {
+        "Pattern": "virta dešra",
+        "ReplacementCategory": "Virtos dešros"
+      },
+      {
+        "Pattern": "virtos dešros",
+        "ReplacementCategory": "Virtos dešros"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Karštai rūkyti mėsos gaminiai",
+    "ItemMatcher": [
+      {
+        "Pattern": "karštai rūkyta",
+        "ReplacementCategory": "Karštai rūkyti gaminiai"
+      },
+      {
+        "Pattern": "karštai rūkytas",
+        "ReplacementCategory": "Karštai rūkyti gaminiai"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Vytintos mėsos produktai",
+    "ItemMatcher": [
+      {
+        "Pattern": "vytinta",
+        "ReplacementCategory": "Vytinti mėsos gaminiai"
+      },
+      {
+        "Pattern": "vytintų",
+        "ReplacementCategory": "Vytinti mėsos gaminiai"
+      },
+      {
+        "Pattern": "vytintas",
+        "ReplacementCategory": "Vytinti mėsos gaminiai"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Šaltai rūkyti gaminiai",
+    "ItemMatcher": [
+      {
+        "Pattern": "šaltai rūkyta",
+        "ReplacementCategory": "Šaltai rūkyti gaminiai"
+      },
+      {
+        "Pattern": "šaltai rūkytas",
+        "ReplacementCategory": "Šaltai rūkyti gaminiai"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Dešrelės",
+    "ItemMatcher": [
+      {
+        "Pattern": "virtos dešrelės",
+        "ReplacementCategory": "Virtos dešrelės"
+      },
+      {
+        "Pattern": "pieniškos dešrelės",
+        "ReplacementCategory": "Virtos dešrelės"
+      },
+      {
+        "Pattern": "kabanossi",
+        "ReplacementCategory": "Virtos dešrelės"
+      },
+      {
+        "Pattern": "kabanosy",
+        "ReplacementCategory": "Virtos dešrelės"
+      },
+      {
+        "Pattern": " sardelės",
+        "ReplacementCategory": "Virtos dešrelės"
+      },
+      {
+        "Pattern": "virtos pieniškos dešrelės",
+        "ReplacementCategory": "Virtos dešrelės"
+      },
+      {
+        "Pattern": "kepamos dešrelės",
+        "ReplacementCategory": "Dešrelės griliui"
+      },
+      {
+        "Pattern": "kepamosios vištienos dešrelės",
+        "ReplacementCategory": "Dešrelės griliui"
+      },
+      {
+        "Pattern": "kepamosios kiaulienos dešrelės",
+        "ReplacementCategory": "Dešrelės griliui"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Mėsos gaminiai",
+    "ItemMatcher": [
+      {
+        "Pattern": "paštetas",
+        "ReplacementCategory": "Paštetai ir kiti gaminiai"
+      },
+      {
+        "Pattern": "drebučiai",
+        "ReplacementCategory": "Paštetai ir kiti gaminiai"
+      },
+      {
+        "Pattern": "konservai",
+        "ReplacementCategory": "Mėsos ir paukštienos konservai"
+      },
+      {
+        "Pattern": "kotletas",
+        "ReplacementCategory": "Virti, kepti ir sūdyti gaminiai"
+      },
+      {
+        "Pattern": "plovas",
+        "ReplacementCategory": "Virti, kepti ir sūdyti gaminiai"
+      },
+      {
+        "Pattern": "cepelinai",
+        "ReplacementCategory": "Virti, kepti ir sūdyti gaminiai"
+      },
+      {
+        "Pattern": "balandėliai",
+        "ReplacementCategory": "Virti, kepti ir sūdyti gaminiai"
+      },
+      {
+        "Pattern": "apkepas",
+        "ReplacementCategory": "Virti, kepti ir sūdyti gaminiai"
+      },
+      {
+        "Pattern": "bulvių plokštainis",
+        "ReplacementCategory": "Virti, kepti ir sūdyti gaminiai"
+      },
+      {
+        "Pattern": "netikras zuikis",
+        "ReplacementCategory": "Virti, kepti ir sūdyti gaminiai"
+      },
+      {
+        "Pattern": "balandėliai",
+        "ReplacementCategory": "Virti, kepti ir sūdyti gaminiai"
+      },
+      {
+        "Pattern": "kepsneliai",
+        "ReplacementCategory": "Virti, kepti ir sūdyti gaminiai"
+      },
+      {
+        "Pattern": "žemaičių blynai",
+        "ReplacementCategory": "Virti, kepti ir sūdyti gaminiai"
+      },
+      {
+        "Pattern": "šašlykas",
+        "ReplacementCategory": "Marinuota mėsa"
+      },
+      {
+        "Pattern": "marinuota",
+        "ReplacementCategory": "Marinuota mėsa"
+      },
+      {
+        "Pattern": "marinuotas",
+        "ReplacementCategory": "Marinuota mėsa"
+      },
+      {
+        "Pattern": "marinuoti",
+        "ReplacementCategory": "Marinuota mėsa"
+      },
+      {
+        "Pattern": "marinate",
+        "ReplacementCategory": "Marinuota mėsa"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Šviežia mėsa",
+    "ItemMatcher": [
+      {
+        "Pattern": "kiauliena",
+        "ReplacementCategory": "Kiauliena"
+      },
+      {
+        "Pattern": "kiaulių",
+        "ReplacementCategory": "Kiauliena"
+      },
+      {
+        "Pattern": "kiaulienos",
+        "ReplacementCategory": "Kiauliena"
+      },
+      {
+        "Pattern": "jautiena",
+        "ReplacementCategory": "Jautiena"
+      },
+      {
+        "Pattern": "jaučių",
+        "ReplacementCategory": "Jautiena"
+      },
+      {
+        "Pattern": "jautienos",
+        "ReplacementCategory": "Jautiena"
+      },
+      {
+        "Pattern": "veršiena",
+        "ReplacementCategory": "Jautiena"
+      },
+      {
+        "Pattern": "veršienos",
+        "ReplacementCategory": "Jautiena"
+      },
+      {
+        "Pattern": "triušiena",
+        "ReplacementCategory": "Triušiena"
+      },
+      {
+        "Pattern": "triušio",
+        "ReplacementCategory": "Triušiena"
+      },
+      {
+        "Pattern": "triušienos",
+        "ReplacementCategory": "Triušienos"
+      },
+      {
+        "Pattern": "avienos",
+        "ReplacementCategory": "Aviena"
+      },
+      {
+        "Pattern": "aviena",
+        "ReplacementCategory": "Aviena"
+      },
+      {
+        "Pattern": "avies",
+        "ReplacementCategory": "Aviena"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Pienas",
+    "ItemMatcher": [
+      {
+        "Pattern": "gėrimas",
+        "ReplacementCategory": "Pieno gėrimai"
+      },
+      {
+        "Pattern": "sojų",
+        "ReplacementCategory": "Sojų pienas"
+      },
+      {
+        "Pattern": "ryžių",
+        "ReplacementCategory": "Augalinis pienas"
+      },
+      {
+        "Pattern": "sutirštintas",
+        "ReplacementCategory": "Sutirštintas pienas"
+      },
+      {
+        "Pattern": "avižų",
+        "ReplacementCategory": "Augalinis pienas"
+      },
+      {
+        "Pattern": "kokosų",
+        "ReplacementCategory": "Augalinis pienas"
+      },
+      {
+        "Pattern": "migdolų",
+        "ReplacementCategory": "Augalinis pienas"
+      },
+      {
+        "Pattern": "pienas",
+        "ReplacementCategory": "Pasterizuotas pienas"
+      },
+      {
+        "Pattern": "natūralus",
+        "ReplacementCategory": "Pasterizuotas pienas"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Kiaušiniai",
+    "ItemMatcher": [
+      {
+        "Pattern": "vištų kiaušiniai",
+        "ReplacementCategory": "Vištų kiaušiniai"
+      },
+      {
+        "Pattern": "putpelių kiaušiniai",
+        "ReplacementCategory": "Putpelių kiaušiniai"
+      },
+      {
+        "Pattern": "kiaušiniai",
+        "ReplacementCategory": "Vištų kiaušiniai"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Jogurtas",
+    "ItemMatcher": [
+      {
+        "Pattern": "persikais",
+        "ReplacementCategory": "Jogurtai su pagardais"
+      },
+      {
+        "Pattern": "braškių",
+        "ReplacementCategory": "Jogurtai su pagardais"
+      },
+      {
+        "Pattern": "vyšnių",
+        "ReplacementCategory": "Jogurtai su pagardais"
+      },
+      {
+        "Pattern": "abrikosų",
+        "ReplacementCategory": "Jogurtai su pagardais"
+      },
+      {
+        "Pattern": "braškėmis",
+        "ReplacementCategory": "Jogurtai su pagardais"
+      },
+      {
+        "Pattern": "spanguolėmis",
+        "ReplacementCategory": "Jogurtai su pagardais"
+      },
+      {
+        "Pattern": "mangais",
+        "ReplacementCategory": "Jogurtai su pagardais"
+      },
+      {
+        "Pattern": "persikų",
+        "ReplacementCategory": "Jogurtai su pagardais"
+      },
+      {
+        "Pattern": "bananų",
+        "ReplacementCategory": "Jogurtai su pagardais"
+      },
+      {
+        "Pattern": "kriaušių",
+        "ReplacementCategory": "Jogurtai su pagardais"
+      },
+      {
+        "Pattern": "vyšniomis",
+        "ReplacementCategory": "Jogurtai su pagardais"
+      },
+      {
+        "Pattern": "figomis",
+        "ReplacementCategory": "Jogurtai su pagardais"
+      },
+      {
+        "Pattern": "agrastais",
+        "ReplacementCategory": "Jogurtai su pagardais"
+      },
+      {
+        "Pattern": "šilauogėmis",
+        "ReplacementCategory": "Jogurtai su pagardais"
+      },
+      {
+        "Pattern": "bananais",
+        "ReplacementCategory": "Jogurtai su pagardais"
+      },
+      {
+        "Pattern": "kiviais",
+        "ReplacementCategory": "Jogurtai su pagardais"
+      },
+      {
+        "Pattern": "vanile",
+        "ReplacementCategory": "Jogurtai su pagardais"
+      },
+      {
+        "Pattern": "ananasais",
+        "ReplacementCategory": "Jogurtai su pagardais"
+      },
+      {
+        "Pattern": "mėlynėmis",
+        "ReplacementCategory": "Jogurtai su pagardais"
+      },
+      {
+        "Pattern": "obuoliais",
+        "ReplacementCategory": "Jogurtai su pagardais"
+      },
+      {
+        "Pattern": "slyvomis",
+        "ReplacementCategory": "Jogurtai su pagardais"
+      },
+      {
+        "Pattern": "apelsinų",
+        "ReplacementCategory": "Jogurtai su pagardais"
+      },
+      {
+        "Pattern": "miško uogomis",
+        "ReplacementCategory": "Jogurtai su pagardais"
+      },
+      {
+        "Pattern": "be laktozės",
+        "ReplacementCategory": "Jogurtai ir desertai be laktozės"
+      },
+      {
+        "Pattern": "natūralus",
+        "ReplacementCategory": "Jogurtai be pagardų"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Grietinė"
+  },
+  {
+    "CategoryName": "Geriamasis jogurtas",
+    "ItemMatcher": [
+      {
+        "Pattern": "jogurtinis gėrimas",
+        "ReplacementCategory": "Geriamieji jogurtai"
+      },
+      {
+        "Pattern": "geriamasis",
+        "ReplacementCategory": "Geriamieji jogurtai"
+      },
+      {
+        "Pattern": "geriamas",
+        "ReplacementCategory": "Geriamieji jogurtai"
+      },
+      {
+        "Pattern": "be laktozės",
+        "ReplacementCategory": "Jogurtai ir desertai be laktozės"
+      },
+      {
+        "ReplacementCategory": "Geriamieji jogurtai"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Varškės Sūreliai",
+    "ItemMatcher": [
+      {
+        "ReplacementCategory": "Varškės sūreliai"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Kefyras, pasukos, rūgpienis",
+    "ItemMatcher": [
+      {
+        "Pattern": "kefyras",
+        "ReplacementCategory": "Kefyras ir kefyro gėrimai"
+      },
+      {
+        "Pattern": "kefyro",
+        "ReplacementCategory": "Kefyras ir kefyro gėrimai"
+      },
+      {
+        "Pattern": "rūgpienis",
+        "ReplacementCategory": "Rūgpienis"
+      },
+      {
+        "Pattern": "rauginto",
+        "ReplacementCategory": "Raugintos pasukos"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Sviestas, margarinas, riebalai",
+    "ItemMatcher": [
+      {
+        "Pattern": "sviestas",
+        "ReplacementCategory": "Sviestas"
+      },
+      {
+        "Pattern": "margarinas",
+        "ReplacementCategory": "Margarinas"
+      },
+      {
+        "Pattern": "tepinys",
+        "ReplacementCategory": "Tepieji riebalų mišiniai"
+      },
+      {
+        "Pattern": "tepieji",
+        "ReplacementCategory": "Tepieji riebalų mišiniai"
+      },
+      {
+        "Pattern": "tepiųjų",
+        "ReplacementCategory": "Tepieji riebalų mišiniai"
+      },
+      {
+        "Pattern": "tepus",
+        "ReplacementCategory": "Tepieji riebalų mišiniai"
+      },
+      {
+        "Pattern": "tepusis",
+        "ReplacementCategory": "Tepieji riebalų mišiniai"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Minkšti sūriai",
+    "ItemMatcher": [
+      {
+        "Pattern": "dešrelės",
+        "ReplacementCategory": "Sūrio užkandžiai ir sūrio lazdelės"
+      },
+      {
+        "Pattern": "užkandis",
+        "ReplacementCategory": "Sūrio užkandžiai ir sūrio lazdelės"
+      },
+      {
+        "Pattern": "lydytas",
+        "ReplacementCategory": "Lydyti sūriai"
+      },
+      {
+        "Pattern": "tepamas",
+        "ReplacementCategory": "Tepamieji sūriai"
+      },
+      {
+        "Pattern": "tepamasis",
+        "ReplacementCategory": "Tepamieji sūriai"
+      },
+      {
+        "Pattern": "pelėsinis",
+        "ReplacementCategory": "Pelėsiniai sūriai"
+      },
+      {
+        "Pattern": "fetos",
+        "ReplacementCategory": "Fetos ir brinzos sūriai"
+      },
+      {
+        "Pattern": "maskarponės",
+        "ReplacementCategory": "Maskarponės ir rikotos sūriai"
+      },
+      {
+        "Pattern": "buratta",
+        "ReplacementCategory": "Mocarelos ir buratos sūriai"
+      },
+      {
+        "Pattern": "mozzarella",
+        "ReplacementCategory": "Mocarelos ir buratos sūriai"
+      },
+      {
+        "Pattern": "sūris",
+        "ReplacementCategory": "Fermentiniai sūriai"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Puskiečiai ir kieti sūriai",
+    "ItemMatcher": [
+      {
+        "ReplacementCategory": "Kietieji sūriai"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Varškės sūriai"
+  },
+  {
+    "CategoryName": "Varškė"
+  },
+  {
+    "CategoryName": "Majonezas"
+  },
+  {
+    "CategoryName": "Varškė Desertai, Užtepėlės",
+    "ItemMatcher": [
+      {
+        "Pattern": "grūdėta",
+        "ReplacementCategory": "Grūdėta varškė"
+      },
+      {
+        "Pattern": "sūrelis",
+        "ReplacementCategory": "Varškės sūreliai"
+      },
+      {
+        "Pattern": "varškytė",
+        "ReplacementCategory": "Desertinė varškė"
+      },
+      {
+        "Pattern": "tepamoji",
+        "ReplacementCategory": "Tepamoji varškė"
+      },
+      {
+        "Pattern": "užtepėlė",
+        "ReplacementCategory": "Tepamoji varškė"
+      },
+      {
+        "Pattern": "figomis",
+        "ReplacementCategory": "Desertinė varškė"
+      },
+      {
+        "Pattern": "mangais",
+        "ReplacementCategory": "Desertinė varškė"
+      },
+      {
+        "Pattern": "šilauogėmis",
+        "ReplacementCategory": "Desertinė varškė"
+      },
+      {
+        "Pattern": "slyvomis",
+        "ReplacementCategory": "Desertinė varškė"
+      },
+      {
+        "Pattern": "braškėmis",
+        "ReplacementCategory": "Desertinė varškė"
+      }
+    ]
+  },
+  {
+    "CategoryName": "Produktai be laktozės",
+    "ItemMatcher": [
+      {
+        "Pattern": "pienas",
+        "ReplacementCategory": "Pienas ir gėrimai be laktozės"
+      }
+    ]
+  }
+]
