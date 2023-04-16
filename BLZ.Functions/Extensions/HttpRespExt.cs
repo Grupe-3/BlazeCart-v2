@@ -15,12 +15,13 @@ namespace BLZ.Functions.Extensions
             var resp = req.CreateResponse(HttpStatusCode.OK);
 
             /* TODO: If local - gzip manually */
-            /* Adding gzip header when running locally will break requests */
+            /*
             bool isLocal = string.IsNullOrEmpty(Environment.GetEnvironmentVariable("WEBSITE_INSTANCE_ID"));
             if (!isLocal)
             {
                 resp.Headers.Add("Content-Encoding", "gzip");
             }
+            */
             await resp.WriteStringAsync(data);
             return resp;
         }
@@ -30,12 +31,13 @@ namespace BLZ.Functions.Extensions
             var resp = req.CreateResponse(HttpStatusCode.OK);
 
             /* TODO: If local - gzip manually */
-            /* Adding gzip header when running locally will break requests */
+            /*
             bool isLocal = string.IsNullOrEmpty(Environment.GetEnvironmentVariable("WEBSITE_INSTANCE_ID"));
             if (!isLocal)
             {
                 resp.Headers.Add("Content-Encoding", "gzip");
             }
+            */
             await resp.WriteAsJsonAsync(data);
             return resp;
         }
