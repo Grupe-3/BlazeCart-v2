@@ -16,7 +16,7 @@ namespace BLZ.Common.Models
     {
         public enum ReportReason
         {
-            InaccuratePrice, NotAvailable
+            InaccuratePrice, InaccurateName, InaccurateCategory, NotAvailable
         }
 
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -33,7 +33,8 @@ namespace BLZ.Common.Models
 
         public ReportReason Reason { get; set; }
 
-        public string? Description { get; set; }
+        public bool IsSpam { get; set; }
+        public bool IsSolved { get; set; }
         public DateTime Created { get; set; }
 
         public Report()

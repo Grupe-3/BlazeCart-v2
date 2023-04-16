@@ -27,6 +27,7 @@
         public const string ReportSubmit = "reports/submit";
         public const string ReportGetIds = "reports/getIds";
         public const string ReportGet = "reports/get/{id}";
-        public const string ReportClear = "reports/clear/{id}";
+        public const string ReportMarkAsSpam = "reports/{id}";
+        public const string ReportMarkAsSolved = "reports/solve";
     }
 }

@@ -34,11 +34,19 @@ namespace BLZ.Functions.Functions.HTTP
         public async Task<HttpResponseData> ReportGetById([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = Routes.ReportGet)] HttpRequestData req, int id)
             => await req.OkResp(await _reportRepo.GetReportsForItemAsync(id));
 
-        [Function("HttpReportsClearReportsById")]
-        public async Task<HttpResponseData> ReportClearById([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = Routes.ReportClear)] HttpRequestData req, int id)
+        [Function("HttpReportsMarkUserAsSpam")]
+        public async Task<HttpResponseData> ReportMarkUserAsSpam([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = Routes.ReportMarkAsSpam)] HttpRequestData req, string user_id)
         {
-            await _reportRepo.ClearReportsForItemAsync(id);
-            return await req.Ok("Cleared!");
+            await _reportRepo.MarkAsSpamAsync(user_id);
+            return await req.Ok("Marked user!");
+        }
+
+        [Function("HttpReportsMarkAsSolved")]
+        public async Task<HttpResponseData> ReportMarkAsSolved([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = Routes.ReportMarkAsSolved)] HttpRequestData req)
+        {
+            var report = await req.BodyAs<Report>();
+            await _reportRepo.MarkAsSolvedAsync(report);
+            return await req.Ok("Marked as solved!");
         }
     }
 }

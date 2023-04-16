@@ -22,6 +22,7 @@ namespace BLZ.Functions.Extensions
                 resp.Headers.Add("Content-Encoding", "gzip");
             }
             */
+
             await resp.WriteStringAsync(data);
             return resp;
         }
@@ -38,6 +39,7 @@ namespace BLZ.Functions.Extensions
                 resp.Headers.Add("Content-Encoding", "gzip");
             }
             */
+
             await resp.WriteAsJsonAsync(data);
             return resp;
         }
