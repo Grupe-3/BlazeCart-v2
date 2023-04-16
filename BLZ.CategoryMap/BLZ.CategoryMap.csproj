@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="CategoryMap\" />
+    <None Remove="Configs\BarboraMap.json" />
+    <None Remove="Configs\Categories.json" />
+    <None Remove="Configs\IkiMap.json" />
+    <None Remove="Microsoft.Extensions.Logging" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLZ.Common\BLZ.Common.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
+    <PackageReference Include="Nito.AsyncEx.Coordination" Version="5.1.2" />
+    <PackageReference Include="System.Text.Json" Version="7.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Configs\BarboraMap.json" />
+    <EmbeddedResource Include="Configs\Categories.json" />
+    <EmbeddedResource Include="Configs\IkiMap.json" />
+  </ItemGroup>
+</Project>
