@@ -1,7 +1,7 @@
 ﻿
 using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace BlazeCart.ViewModels;
+namespace BLZ.Client.ViewModels;
 
 [QueryProperty(nameof(Coordinates), "Coordinates")]
 [QueryProperty(nameof(Url), "Url")]

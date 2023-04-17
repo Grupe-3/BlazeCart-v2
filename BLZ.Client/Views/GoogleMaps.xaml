@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BlazeCart.Views.GoogleMaps"
+             x:Class="BLZ.Client.Views.GoogleMaps"
              Title="GoogleMaps"
              BackgroundColor="{StaticResource PageBackgroundColor}"
              Shell.NavBarIsVisible="False"
-             xmlns:viewmodel="clr-namespace:BlazeCart.ViewModels"
+             xmlns:viewmodel="clr-namespace:BLZ.Client.ViewModels"
              x:DataType="viewmodel:GoogleMapsViewModel">
     <ScrollView>
         <VerticalStackLayout>

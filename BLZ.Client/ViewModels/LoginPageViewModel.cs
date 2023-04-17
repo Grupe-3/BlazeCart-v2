@@ -1,9 +1,9 @@
-﻿using BlazeCart.Services;
-using BlazeCart.Views;
+﻿using BLZ.Client.Services;
+using BLZ.Client.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Firebase.Auth;
-namespace BlazeCart.ViewModels
+namespace BLZ.Client.ViewModels
 {
     public partial class LoginPageViewModel : BaseViewModel
     {

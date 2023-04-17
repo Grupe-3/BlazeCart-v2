@@ -1,6 +1,6 @@
 ﻿using Plugin.Firebase.Auth;
 
-namespace BlazeCart.Services
+namespace BLZ.Client.Services
 {
     public class AuthService
     {

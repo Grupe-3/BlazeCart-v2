@@ -1,4 +1,4 @@
-namespace BlazeCart.Resources.Styles;
+namespace BLZ.Client.Resources.Styles;
 
 public partial class Fonts : ResourceDictionary
 {

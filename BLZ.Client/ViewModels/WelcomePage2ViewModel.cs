@@ -1,8 +1,8 @@
-﻿using BlazeCart.Views;
+﻿using BLZ.Client.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
-namespace BlazeCart.ViewModels
+namespace BLZ.Client.ViewModels
 {
     public partial class WelcomePage2ViewModel : ObservableObject
     {

@@ -1,10 +1,10 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using BlazeCart.Models;
-using BlazeCart.Services;
+using BLZ.Client.Models;
+using BLZ.Client.Services;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.Extensions.Logging;
 
-namespace BlazeCart.ViewModels
+namespace BLZ.Client.ViewModels
 {
     [QueryProperty(nameof(Item), "Item")]
     [QueryProperty(nameof(Name), "NameLT")]

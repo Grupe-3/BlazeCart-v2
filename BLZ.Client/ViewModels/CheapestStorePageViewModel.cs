@@ -1,11 +1,11 @@
-﻿using BlazeCart.Models;
-using BlazeCart.Services;
+﻿using BLZ.Client.Models;
+using BLZ.Client.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.Collections.ObjectModel;
 
 
-namespace BlazeCart.ViewModels
+namespace BLZ.Client.ViewModels
 {
     [QueryProperty(nameof(TotalPrice), "TotalPrice")]
     [QueryProperty(nameof(Logo), "Logo")]

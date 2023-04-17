@@ -1,6 +1,6 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace BlazeCart.ViewModels;
+namespace BLZ.Client.ViewModels;
 
 public class WelcomePage1ViewModel : ObservableObject
 {

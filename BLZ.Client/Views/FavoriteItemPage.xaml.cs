@@ -1,9 +1,9 @@
 using System.Collections.ObjectModel;
-using BlazeCart.Models;
-using BlazeCart.Services;
-using BlazeCart.ViewModels;
+using BLZ.Client.Models;
+using BLZ.Client.Services;
+using BLZ.Client.ViewModels;
 
-namespace BlazeCart.Views;
+namespace BLZ.Client.Views;
 
 public partial class FavoriteItemPage : ContentPage
 {

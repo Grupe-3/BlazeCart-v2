@@ -1,5 +1,5 @@
-﻿using BlazeCart.Views;
-namespace BlazeCart;
+﻿using BLZ.Client.Views;
+namespace BLZ.Client;
 
 public partial class AppShell : Shell
 {

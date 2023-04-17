@@ -1,11 +1,11 @@
 ﻿using System.Text.RegularExpressions;
-using BlazeCart.Views;
-using BlazeCart.Services;
+using BLZ.Client.Views;
+using BLZ.Client.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Firebase.Auth;
 
-namespace BlazeCart.ViewModels
+namespace BLZ.Client.ViewModels
 {
     public partial class RegisterPageViewModel : BaseViewModel
     {

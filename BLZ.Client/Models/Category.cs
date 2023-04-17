@@ -1,12 +1,18 @@
 using CommunityToolkit.Mvvm.ComponentModel;
+using Newtonsoft.Json;
 
-namespace BlazeCart.Models;
+namespace BLZ.Client.Models;
 
 public class Category : ObservableObject
 {
-    public string InternalID { get; }
-    public string NameLT { get; set; }
-    public Uri? Image { get; set; }
-    public Guid Id { get; set; }
+    [JsonProperty]
+    public string Name { get; set; }
+
+    [JsonIgnore]
     public int Count { get; set; }
+
+    public Category(string name)
+    {
+        Name = name;
+    }
 }

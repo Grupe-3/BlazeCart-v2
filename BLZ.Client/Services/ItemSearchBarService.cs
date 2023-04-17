@@ -1,7 +1,7 @@
 ﻿using System.Collections.ObjectModel;
-using BlazeCart.Models;
+using BLZ.Client.Models;
 
-namespace BlazeCart.Services;
+namespace BLZ.Client.Services;
 
 public class ItemSearchBarService
 {

@@ -1,13 +1,14 @@
-﻿using BlazeCart.Models;
-using BlazeCart.Services;
+﻿using BLZ.Client.Models;
+using BLZ.Client.Services;
 using System.Collections.ObjectModel;
-using BlazeCart.Views;
+using BLZ.Client.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.Extensions.Logging;
 using Debug = System.Diagnostics.Debug;
+using BLZ.Client.Services;
 
-namespace BlazeCart.ViewModels;
+namespace BLZ.Client.ViewModels;
 
 [QueryProperty(nameof(NameLT), "NameLT")]
 [QueryProperty(nameof(Id), "Id")]
@@ -17,7 +18,7 @@ public partial class ItemsViewModel : BaseViewModel
     [ObservableProperty] public bool isRefreshing;
 
     [ObservableProperty] public string nameLT;
-    [ObservableProperty] public Guid id;
+    [ObservableProperty] public string id;
     [ObservableProperty] public int count;
     public ObservableCollection<Item> Items { get; set; } = new();
 

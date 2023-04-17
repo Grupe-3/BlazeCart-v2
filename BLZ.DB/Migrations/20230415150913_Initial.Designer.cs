@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace GP3.DB.Migrations
+namespace BLZ.DB.Migrations
 {
     [DbContext(typeof(ScraperDbContext))]
     [Migration("20230415150913_Initial")]

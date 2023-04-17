@@ -1,4 +1,4 @@
-namespace BlazeCart.Cells;
+namespace BLZ.Client.Cells;
 
 public partial class ItemCard : ContentPage
 {

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BlazeCart.Views.CartHistoryPage"
-             xmlns:viewmodel="clr-namespace:BlazeCart.ViewModels"
-             xmlns:models="clr-namespace:BlazeCart.Models"
+             x:Class="BLZ.Client.Views.CartHistoryPage"
+             xmlns:viewmodel="clr-namespace:BLZ.Client.ViewModels"
+             xmlns:models="clr-namespace:BLZ.Client.Models"
              Shell.NavBarIsVisible="False"
              x:DataType="viewmodel:CartHistoryPageViewModel"
              BackgroundColor="{StaticResource PageBackgroundColor}"

@@ -9,10 +9,10 @@ using System.Security.Claims;
 
 namespace BLZ.Functions.Functions.HTTP
 {
-    public class ReportHttpFunc
+    public class ReportingHttpFunc
     {
         private readonly IReportRepository _reportRepo;
-        public ReportHttpFunc(IReportRepository reportRepository)
+        public ReportingHttpFunc(IReportRepository reportRepository)
         {
             _reportRepo = reportRepository;
         }
@@ -35,14 +35,14 @@ namespace BLZ.Functions.Functions.HTTP
             => await req.OkResp(await _reportRepo.GetReportsForItemAsync(id));
 
         [Function("HttpReportsMarkUserAsSpam")]
-        public async Task<HttpResponseData> ReportMarkUserAsSpam([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = Routes.ReportMarkAsSpam)] HttpRequestData req, string user_id)
+        public async Task<HttpResponseData> ReportMarkUserAsSpam([HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = Routes.ReportMarkAsSpam)] HttpRequestData req, string user_id)
         {
             await _reportRepo.MarkAsSpamAsync(user_id);
             return await req.Ok("Marked user!");
         }
 
         [Function("HttpReportsMarkAsSolved")]
-        public async Task<HttpResponseData> ReportMarkAsSolved([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = Routes.ReportMarkAsSolved)] HttpRequestData req)
+        public async Task<HttpResponseData> ReportMarkAsSolved([HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = Routes.ReportMarkAsSolved)] HttpRequestData req)
         {
             var report = await req.BodyAs<Report>();
             await _reportRepo.MarkAsSolvedAsync(report);

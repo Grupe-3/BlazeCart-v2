@@ -1,5 +1,5 @@
-using BlazeCart.ViewModels;
-namespace BlazeCart.Views;
+using BLZ.Client.ViewModels;
+namespace BLZ.Client.Views;
 
 public partial class EmptyStorePage : ContentPage
 {

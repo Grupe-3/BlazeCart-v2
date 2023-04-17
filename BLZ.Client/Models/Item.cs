@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 using SQLite;
 using SQLiteNetExtensions.Attributes;
 
-namespace BlazeCart.Models
+namespace BLZ.Client.Models
 {
     [Serializable]
     public partial class Item : ObservableObject

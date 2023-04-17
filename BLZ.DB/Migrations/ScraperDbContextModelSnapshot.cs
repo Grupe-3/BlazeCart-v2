@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace GP3.DB.Migrations
+namespace BLZ.DB.Migrations
 {
     [DbContext(typeof(ScraperDbContext))]
     partial class ScraperDbContextModelSnapshot : ModelSnapshot

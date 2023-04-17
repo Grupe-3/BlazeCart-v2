@@ -1,11 +1,11 @@
 ﻿using System.Collections.ObjectModel;
-using BlazeCart.Models;
-using BlazeCart.Services;
-using BlazeCart.Views;
+using BLZ.Client.Models;
+using BLZ.Client.Services;
+using BLZ.Client.Views;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.Extensions.Logging;
 
-namespace BlazeCart.ViewModels
+namespace BLZ.Client.ViewModels
 {
     public partial class CartPageViewModel : BaseViewModel
     {

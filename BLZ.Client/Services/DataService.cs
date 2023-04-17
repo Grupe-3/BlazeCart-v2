@@ -1,9 +1,9 @@
-﻿using BlazeCart.Models;
+﻿using BLZ.Client.Models;
 using SQLite;
 using System.Collections.ObjectModel;
 using SQLiteNetExtensionsAsync.Extensions;
 
-namespace BlazeCart.Services
+namespace BLZ.Client.Services
 {
     public class DataService
     {

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace BlazeCart.Models
+namespace BLZ.Client.Models
 {
     public class Cart
     {

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:styles="clr-namespace:BlazeCart.Resources.Styles"
-             x:Class="BlazeCart.Resources.Styles.Styles">
+             xmlns:styles="clr-namespace:BLZ.Client.Resources.Styles"
+             x:Class="BLZ.Client.Resources.Styles.Styles">
     <ResourceDictionary.MergedDictionaries>
         <styles:Colors></styles:Colors>
         <styles:Fonts></styles:Fonts>

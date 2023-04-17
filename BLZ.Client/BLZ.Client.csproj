@@ -7,7 +7,7 @@
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net6.0-tizen</TargetFrameworks> -->
 		<OutputType Condition="'$(TargetFramework)' != 'net7.0'">Exe</OutputType>
-		<RootNamespace>BlazeCart</RootNamespace>
+		<RootNamespace>BLZ.Client</RootNamespace>
 		<UseMaui>true</UseMaui>
 		<Nullable>enable</Nullable>
 		<SingleProject>true</SingleProject>
@@ -273,6 +273,10 @@
 
 	<ItemGroup>
 	  <GoogleServicesJson Include="Platforms\Android\google-services.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\BLZ.Common\BLZ.Common.csproj" />
 	</ItemGroup>
 
 

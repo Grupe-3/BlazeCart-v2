@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:viewmodel="clr-namespace:BlazeCart.ViewModels"
+             xmlns:viewmodel="clr-namespace:BLZ.Client.ViewModels"
              x:DataType="viewmodel:ItemPageViewModel"
-             x:Class="BlazeCart.Views.ItemPage"
+             x:Class="BLZ.Client.Views.ItemPage"
              Shell.NavBarIsVisible="False"
              Title="ItemPage"
              NavigationPage.HasNavigationBar="False"

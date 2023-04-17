@@ -1,8 +1,8 @@
-﻿using BlazeCart.Views;
+﻿using BLZ.Client.Views;
 using MetroLog.Maui;
 using MonkeyCache.FileStore;
 
-namespace BlazeCart;
+namespace BLZ.Client;
 
 public partial class App : Application
 {

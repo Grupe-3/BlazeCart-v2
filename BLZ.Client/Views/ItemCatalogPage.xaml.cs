@@ -1,7 +1,7 @@
-using BlazeCart.ViewModels;
+using BLZ.Client.ViewModels;
 using MetroLog.Maui;
 
-namespace BlazeCart.Views;
+namespace BLZ.Client.Views;
 
 public partial class ItemCatalogPage : ContentPage
 {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mct:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-           x:Class="BlazeCart.Views.ErrorPopUp"
+           x:Class="BLZ.Client.Views.ErrorPopUp"
            xmlns:mct="clr-namespace:CommunityToolkit.Maui.Views;assembly=CommunityToolkit.Maui"
            CanBeDismissedByTappingOutsideOfPopup="False">
     <VerticalStackLayout BackgroundColor="{StaticResource PageBackgroundColor}">

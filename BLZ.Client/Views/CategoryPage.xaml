@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BlazeCart.Views.CategoryPage"
+             x:Class="BLZ.Client.Views.CategoryPage"
              Title="CategoryPage"
              Shell.NavBarIsVisible="False"
-             xmlns:model="clr-namespace:BlazeCart.Models"
-             xmlns:viewmodel="clr-namespace:BlazeCart.ViewModels"
+             xmlns:model="clr-namespace:BLZ.Client.Models"
+             xmlns:viewmodel="clr-namespace:BLZ.Client.ViewModels"
              xmlns:dxcv="clr-namespace:DevExpress.Maui.CollectionView;assembly=DevExpress.Maui.CollectionView"
              x:DataType="viewmodel:CategoryViewModel"
              BackgroundColor="{StaticResource PageBackgroundColor}">
@@ -50,19 +50,13 @@
                                             <Grid.RowDefinitions>
                                                 <RowDefinition Height="110" />
                                             </Grid.RowDefinitions>
-                                            <Image Grid.Row="0"
-                                                   Grid.Column="0"
-                                                   Margin="0.8"
-                                                   Source="{Binding Image}"
-                                                   HeightRequest="95"
-                                                   MaximumHeightRequest="95" />
                                             <VerticalStackLayout Grid.Column="1"
                                                                  Grid.Row="0">
                                                 <Label VerticalOptions="Center"
                                                        HorizontalOptions="Start"
                                                        Margin="1, 3, 3, 1"
                                                        Padding="1, 3, 3, 1"
-                                                       Text="{Binding NameLT}"
+                                                       Text="{Binding Name}"
                                                        TextColor="{StaticResource PrimaryTextColor}"
                                                        Style="{StaticResource ItemNamePoppins}" />
                                                 <HorizontalStackLayout>

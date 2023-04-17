@@ -1,6 +1,7 @@
-﻿using BlazeCart.Views;
-using BlazeCart.Services;
-using BlazeCart.ViewModels;
+﻿using BLZ.Client.Views;
+using BLZ.Client.Services;
+using BLZ.Client.ViewModels;
+using BLZ.Client.Refit;
 using Syncfusion.Maui.Core.Hosting;
 using CommunityToolkit.Maui;
 #if ANDROID
@@ -10,9 +11,8 @@ using MetroLog.MicrosoftExtensions;
 using SkiaSharp.Views.Maui.Controls.Hosting;
 using System.Reflection;
 using Microsoft.Extensions.Configuration;
-using BlazeCart.Models;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Maui.LifecycleEvents;
+using BLZ.Client.Services;
 
 #if ANDROID
 using Plugin.Firebase.Core.Platforms.Android;
@@ -20,8 +20,7 @@ using Plugin.Firebase.Core.Platforms.Android;
 
 using Plugin.Firebase.Auth;
 
-namespace BlazeCart;
-
+namespace BLZ.Client;
 public static class MauiProgram
 {
 	public static MauiApp CreateMauiApp()
@@ -59,19 +58,12 @@ public static class MauiProgram
                 fonts.AddFont("fa-v4compatibility.ttf", "fa-v4");
             });
 
-        string strAppConfigStreamName = string.Empty;
-        strAppConfigStreamName = "BlazeCart.appsettings.json";
-
-        var assembly = IntrospectionExtensions.GetTypeInfo(typeof(MauiProgram)).Assembly;
-        var stream = assembly.GetManifestResourceStream(strAppConfigStreamName);
-        builder.Configuration.AddJsonStream(stream);
-
-        string firebaseKey = builder.Configuration["FirebaseKey"];
-        string baseUrl = builder.Configuration["BaseUrl"];
-
+        // string strAppConfigStreamName = "BLZ.Client.appsettings.json";
+        // strAppConfigStreamName = "BLZ.Client.appsettings.json";
+        // builder.Configuration.AddJsonFile("appsettings.json");
 
         builder.Services.AddTransient<ItemCatalogPage>();
-        builder.Services.AddSingleton<ItemService>(new ItemService(baseUrl));
+        builder.Services.AddSingleton<ItemService>();
         builder.Services.AddTransient<ItemsViewModel>();
 
         builder.Services.AddSingleton<AuthService>();
@@ -100,7 +92,7 @@ public static class MauiProgram
 
         builder.Services.AddSingleton<CategoryPage>();
         builder.Services.AddSingleton<CategoryViewModel>();
-        builder.Services.AddSingleton<CategoryService>(new CategoryService(baseUrl));
+        builder.Services.AddSingleton<CategoryService>();
 
         builder.Services.AddSingleton<CheapestStorePage>();
         builder.Services.AddSingleton<CheapestStorePageViewModel>();
@@ -123,6 +115,15 @@ public static class MauiProgram
 
         builder.Services.AddTransient<GoogleMaps>();
         builder.Services.AddTransient<GoogleMapsViewModel>();
+
+        var apiRetryCount = 3;
+        var apiRetryWait = TimeSpan.FromSeconds(1);
+        var apiTimeout = TimeSpan.FromSeconds(10);
+        var apiUrl = "https://blazecart.azurewebsites.net/api/";
+
+        builder.Services
+            .AddResilientApi<IItemApi>(apiUrl, apiRetryCount, apiRetryWait, apiTimeout)
+            .AddResilientApi<ICategoryApi>(apiUrl, apiRetryCount, apiRetryWait, apiTimeout);
 
         builder.Logging
             .AddStreamingFileLogger(options =>

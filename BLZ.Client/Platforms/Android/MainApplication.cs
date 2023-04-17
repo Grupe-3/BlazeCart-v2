@@ -9,7 +9,7 @@ using Android.Runtime;
 [assembly: UsesFeature("android.hardware.location.network", Required = false)]
 [assembly: UsesPermission(Manifest.Permission.AccessBackgroundLocation)]
 
-namespace BlazeCart.Platforms.Android;
+namespace BLZ.Client.Platforms.Android;
 
 [Application]
 public class MainApplication : MauiApplication

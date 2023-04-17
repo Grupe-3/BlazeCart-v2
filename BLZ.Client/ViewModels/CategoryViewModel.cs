@@ -1,13 +1,14 @@
 using System.Collections.ObjectModel;
 using System.Diagnostics;
-using BlazeCart.Models;
-using BlazeCart.Services;
-using BlazeCart.Views;
+using BLZ.Client.Services;
+using BLZ.Client.Models;
+using BLZ.Client.Services;
+using BLZ.Client.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using MonkeyCache.FileStore;
 
-namespace BlazeCart.ViewModels;
+namespace BLZ.Client.ViewModels;
 
 public partial class CategoryViewModel : BaseViewModel
 {
@@ -53,11 +54,8 @@ public partial class CategoryViewModel : BaseViewModel
 
                 foreach (var cat in categories)
                 {
-                    var items = await _categoryService.GetItemsByCategoryId(cat.Id);
+                    var items = await _categoryService.GetItemsByCategoryId(cat.Name);
                     cat.Count = items.Count();
-                    if(cat.Count > 0)
-                        cat.Image = items[0].Image;
-                    
                 }
 
                 foreach (var category in categories)
@@ -74,11 +72,8 @@ public partial class CategoryViewModel : BaseViewModel
 
                 foreach (var cat in categories)
                 {
-                    var items = await _categoryService.GetItemsByCategoryId(cat.Id);
+                    var items = await _categoryService.GetItemsByCategoryId(cat.Name);
                     cat.Count = items.Count();
-                    if(cat.Count > 0)
-                        cat.Image = items[0].Image;
-                   
                 }
 
 
@@ -111,8 +106,7 @@ public partial class CategoryViewModel : BaseViewModel
     {
         await Shell.Current.GoToAsync($"{nameof(ItemCatalogPage)}", new Dictionary<string, object>
                   {
-                      {"Id", category.Id},
-                      {"NameLT", category.NameLT},
+                      {"NameLT", category.Name},
                       {"Count", category.Count }
                   });
     }

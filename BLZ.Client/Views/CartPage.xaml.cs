@@ -1,6 +1,6 @@
-using BlazeCart.ViewModels;
+using BLZ.Client.ViewModels;
 
-namespace BlazeCart.Views;
+namespace BLZ.Client.Views;
 
 public partial class CartPage : ContentPage
 {

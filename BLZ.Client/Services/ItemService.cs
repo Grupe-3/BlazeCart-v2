@@ -1,12 +1,15 @@
-﻿using BlazeCart.Models;
+﻿using BLZ.Client.Models;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using System.Collections.ObjectModel;
+using BLZ.Client.Refit;
 
-namespace BlazeCart.Services;
+namespace BLZ.Client.Services;
 
 public class ItemService
 {
+    private readonly IItemApi _api;
+
     ObservableCollection<Item> _itemList = new();
     public ObservableCollection<Item> CartItems { get; set; } = new();
 
@@ -19,35 +22,16 @@ public class ItemService
     public event EventHandler<CartUsedEventArgs> CheapestCart;
 
     public double percentDifference;
-    private HttpClient _client;
 
-    public ItemService(string baseUrl)
+    public ItemService(IItemApi api)
     {
-        _client = new HttpClient
-        {
-            BaseAddress = new Uri(baseUrl),
-
-        };
+        _api = api;
     }
 
     public async Task<ObservableCollection<Item>> Get(int index, int count)
     {
-        var json = await _client.GetStringAsync($"api/Item/{index}/{count}");
-        var jarr = JArray.Parse(json);
-        var items = JsonConvert.DeserializeObject<ObservableCollection<Item>>(jarr.ToString());
-
-        var cats = await _client.GetStringAsync($"api/Item/{index}/{count}/cats");
-        var jarCats = JArray.Parse(cats);
-        var categories = JsonConvert.DeserializeObject<List<String>>(jarCats.ToString());
-        foreach (var item in items)
-        {
-            for(int i = 0; i < categories.Count(); i++)
-            {
-                item.Category = categories[i];
-            }
-        }
-        
-        return items;
+        var items = await _api.GetRange(index, count);
+        return new ObservableCollection<Item>(items);
     }
     public async Task<ObservableCollection<Item>> GetCheapestItems(ObservableCollection<Item> items, bool mixed = false)
     {
@@ -57,25 +41,19 @@ public class ItemService
 
         double totalPriceIKI = 0;
         double totalPriceBarbora = 0;
-        Item itemIKI = new Item();
-        Item itemBarbora = new Item();
-        Item itemMixed = new Item();
-
         foreach (var item in items)
         {
             string name = item.NameLT;
             string? category = item.Category;
             double price = item.Price;
             int comparedMerch = item.Merch;
-            double? amount = item.Ammount;
+            double amount = 0;
+            if (item.Ammount != null) { amount = (double)item.Ammount; }
             Uri image = item.Image;
-            if (amount == null)
-                amount = 0;
+
             if (mixed)
             {
-               
-                var json = await _client.GetStringAsync($"api/Item/{name}/{category}/{price}/{amount}/2/{comparedMerch}");
-                itemMixed = JsonConvert.DeserializeObject<Item>(json.ToString());
+                var itemMixed = await _api.GetCheapest(name, category, price, amount, 2, comparedMerch);
 
                 if (itemMixed.NameLT == name)
                     itemMixed.Image = image;
@@ -89,8 +67,7 @@ public class ItemService
             }
             else
             {
-                var jsonIKI = await _client.GetStringAsync($"api/Item/{name}/{category}/{price}/{amount}/0/{comparedMerch}");
-                itemIKI = JsonConvert.DeserializeObject<Item>(jsonIKI.ToString());
+                var itemIKI = await _api.GetCheapest(name, category, price, amount, 0, comparedMerch);
                 itemIKI.Quantity = item.Quantity;
                 
                 if (itemIKI.Image == null)
@@ -99,8 +76,7 @@ public class ItemService
                     itemIKI.MerchName = "IKI";
                     cheapestItemsIKI.Add(itemIKI);
 
-                    var jsonBarbora = await _client.GetStringAsync($"api/Item/{name}/{category}/{price}/{amount}/1/{comparedMerch}");
-                    itemBarbora = JsonConvert.DeserializeObject<Item>(jsonBarbora.ToString());
+                    var itemBarbora = await _api.GetCheapest(name, category, price, amount, 1, comparedMerch);
                     itemBarbora.Quantity = item.Quantity;
                     itemBarbora.MerchName = "MAXIMA";
                     if (itemBarbora.Image == null)
