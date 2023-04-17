@@ -61,7 +61,6 @@ namespace BLZ.Client.ViewModels
         {
             try
             {
-                Item.IsFavorite = true;
                 await Shell.Current.DisplayAlert("Prekės pridėjimas sėkmingas", "Sėkmingai pažymėjote prekę kaip mėgstamiausią", "OK");
                 await _dataService.AddFavoriteItemToDb(Item);
                 _itemService.OnFavTbUpdated(EventArgs.Empty);

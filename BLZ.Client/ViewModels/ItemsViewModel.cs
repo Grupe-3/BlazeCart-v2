@@ -86,33 +86,8 @@ public partial class ItemsViewModel : BaseViewModel
                
                 foreach (var item in items)
                 {
-                    item.Category = NameLT;
                     item.Price = item.Price / 100;
                     item.PricePerUnitOfMeasure = item.PricePerUnitOfMeasure / 100;
-                    if (item.Merch == 0)
-                        item.MerchName = "IKI";
-                    if (item.Merch == 1)
-                        item.MerchName = "MAXIMA";
-                    if (item.DiscountPrice == null && item.LoyaltyPrice == null)
-                    {
-                        item.LowerPrice = "";
-                    }
-                    else if (item.DiscountPrice > item.LoyaltyPrice && (item.DiscountPrice != null && item.LoyaltyPrice != null))
-                    {
-                        item.LowerPrice = "Akcija: " + (item.LoyaltyPrice / 100).ToString() + "€";
-                    }
-                    else if (item.LoyaltyPrice > item.DiscountPrice && (item.DiscountPrice != null && item.LoyaltyPrice != null))
-                    {
-                        item.LowerPrice = "Akcija: " + (item.DiscountPrice / 100).ToString() + "€";
-                    }
-                    else if (item.DiscountPrice == null && item.LoyaltyPrice != null)
-                    {
-                        item.LowerPrice = "Akcija: " + (item.LoyaltyPrice / 100).ToString() + "€";
-                    }
-                    else if (item.LoyaltyPrice == null && item.DiscountPrice != null)
-                    {
-                        item.LowerPrice = "Akcija: " + (item.DiscountPrice / 100).ToString() + "€";
-                    }
                     if (item.Price != 0)
                         Items.Add(item);
                 }
@@ -149,7 +124,6 @@ public partial class ItemsViewModel : BaseViewModel
     {
         try
         {
-            item.IsFavorite = true;
             await Shell.Current.DisplayAlert("Prekės pridėjimas sėkmingas", "Sėkmingai pažymėjote prekę kaip mėgstamiausią", "OK");
             await _dataService.AddFavoriteItemToDb(item);
             _itemService.OnFavTbUpdated(EventArgs.Empty);
@@ -292,8 +266,7 @@ public partial class ItemsViewModel : BaseViewModel
                        {"Price", item.Price},
                        {"Image", item.Image},
                       {"Description", item.Description},
-                      {"Cat", item.Category },
-                      {"MerchName", item.MerchName }
+                      {"MerchName", Enum.GetName(item.Merchant) }
                   });
             
         }

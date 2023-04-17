@@ -44,11 +44,11 @@ public class ItemService
         foreach (var item in items)
         {
             string name = item.NameLT;
-            string? category = item.Category;
+            string? category = item.RemappedCategoryName;
             double price = item.Price;
-            int comparedMerch = item.Merch;
+            int comparedMerch = (int)item.Merchant;
             double amount = 0;
-            if (item.Ammount != null) { amount = (double)item.Ammount; }
+            if (item.Amount != null) { amount = (double)item.Amount; }
             Uri image = item.Image;
 
             if (mixed)
@@ -57,36 +57,26 @@ public class ItemService
 
                 if (itemMixed.NameLT == name)
                     itemMixed.Image = image;
-                if (itemMixed.Merch == 0)
-                    itemMixed.MerchName = "IKI";
-                else
-                    itemMixed.MerchName = "MAXIMA";
 
-                itemMixed.Quantity = item.Quantity;
                 cheapestItemsMixed.Add(itemMixed);
             }
             else
             {
                 var itemIKI = await _api.GetCheapest(name, category, price, amount, 0, comparedMerch);
-                itemIKI.Quantity = item.Quantity;
                 
                 if (itemIKI.Image == null)
                     itemIKI.Image = image;
-                if (itemIKI.Merch != 1) {
-                    itemIKI.MerchName = "IKI";
+                if (itemIKI.Merchant != Common.Models.Merchant.BARBORA) {
                     cheapestItemsIKI.Add(itemIKI);
 
                     var itemBarbora = await _api.GetCheapest(name, category, price, amount, 1, comparedMerch);
-                    itemBarbora.Quantity = item.Quantity;
-                    itemBarbora.MerchName = "MAXIMA";
                     if (itemBarbora.Image == null)
                         itemBarbora.Image = image;
-                    if (itemBarbora.Merch != 0)
+                    if (itemBarbora.Merchant != Common.Models.Merchant.BARBORA)
                         cheapestItemsBarbora.Add(itemBarbora);
                 }
                 else
                 {
-                    itemIKI.MerchName = "MAXIMA";
                     cheapestItemsBarbora.Add(itemIKI);
                 }
                   
@@ -97,7 +87,7 @@ public class ItemService
         {
             foreach (var i in cheapestItemsBarbora)
             {
-                totalPriceBarbora += i.Price * i.Quantity;
+                totalPriceBarbora += i.Price;
             }
         }
 
@@ -105,7 +95,7 @@ public class ItemService
         {
             foreach (var i in cheapestItemsIKI)
             {
-                totalPriceIKI += i.Price * i.Quantity;
+                totalPriceIKI += i.Price;
             }
         }
         if (mixed)
@@ -160,7 +150,7 @@ public class ItemService
     }
     public void AddToCart(Item item)
     {
-        var query = CartItems.Where(x => x.NameLT == item.NameLT && x.Merch == item.Merch);
+        var query = CartItems.Where(x => x.NameLT == item.NameLT && x.Merchant == item.Merchant);
         var result = query.ToList();
         if (result.Count == 0)
         {
@@ -168,11 +158,6 @@ public class ItemService
         }
         else
         {
-            foreach (var value in CartItems)
-            {
-                if (result.Contains(value))
-                    value.Quantity++;
-            }
         }
         OnCartChanged(new CartUsedEventArgs(CartItems));
     }

@@ -121,7 +121,7 @@
                                     <Label HorizontalTextAlignment="Start"
                                            VerticalOptions="Center"
                                            Style="{StaticResource ItemPricePoppins}"
-                                           Text="{Binding Quantity}" />
+                                           Text="1" /> <!-- Quantity -->
                                     <ImageButton Source="add.png"
                                                  Margin="6.5"
                                                  Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:CartPageViewModel}}, Path=AddQuantityCommand}"

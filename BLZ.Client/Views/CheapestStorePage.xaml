@@ -171,27 +171,6 @@
                                                Text="€"
                                                TextColor="{StaticResource PrimaryTextColor}" />
                                         </HorizontalStackLayout>
-                                        <VerticalStackLayout Grid.Column="1"
-                                                           Grid.Row="1">
-                                            <HorizontalStackLayout>
-                                                <Label HorizontalTextAlignment="Start"
-                                               Margin="0,  0,2, 0"
-                                               Style="{StaticResource ItemPricePoppins}"
-                                               Text="Kiekis: " />
-                                                <Label HorizontalTextAlignment="Start"
-                                               Margin="0,  0,2, 0"
-                                               Style="{StaticResource ItemPricePoppins}"
-                                               Text="{Binding Quantity}" />
-                                            </HorizontalStackLayout>
-                                            
-                                            <Label HorizontalTextAlignment="Start"
-                                               Margin="0,  0, 0, 0"
-                                               Style="{StaticResource ItemPricePoppins}"
-                                               Text="{Binding MerchName}" />
-                                        </VerticalStackLayout>
-                                        
-                                           
-                                            
                                       
                                     </Grid>
                                 </Border>

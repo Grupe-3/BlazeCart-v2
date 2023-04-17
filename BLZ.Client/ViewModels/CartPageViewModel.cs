@@ -47,7 +47,7 @@ namespace BLZ.Client.ViewModels
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Unable to remove item from cart: {item.ItemId}, {item.NameLT}, {ex.Message}");
+                _logger.LogError($"Unable to remove item from cart: {item.Id}, {item.NameLT}, {ex.Message}");
                 throw;
             }
         }
@@ -62,10 +62,6 @@ namespace BLZ.Client.ViewModels
                     string cartName = await Shell.Current.DisplayPromptAsync("Išsaugoti krepšelį",
                         "Įveskite krepšelio pavadinimą: ", "OK",
                         "Cancel", "Įveskite pavadinimą...");
-                    foreach (var item in CartItems)
-                    {
-                        item.IsFavorite = false;
-                    }
 
                     await _dataService.AddCartToDb(cartName, CartItems, GetCartItemsCount(CartItems),
                         GetCartPrice(CartItems));
@@ -126,7 +122,7 @@ namespace BLZ.Client.ViewModels
                             item.PricePerUnitOfMeasure = item.PricePerUnitOfMeasure / 100;
                         }
                         
-                        totalPrice = item.Price * item.Quantity + totalPrice;
+                        totalPrice = item.Price + totalPrice;
 
                     }
                     _itemService.OnCheapestCart(new CartUsedEventArgs(items));
@@ -138,11 +134,11 @@ namespace BLZ.Client.ViewModels
                     }
                     else
                     {
-                        if (items[0].Merch == 0)
+                        if (items[0].Merchant == Common.Models.Merchant.IKI)
                         {
                             logo = "iki_logo.png";
                         }
-                        if (items[0].Merch == 1)
+                        if (items[0].Merchant == Common.Models.Merchant.BARBORA)
                         {
                             logo = "maxima_logo.png";
                         }
@@ -184,7 +180,7 @@ namespace BLZ.Client.ViewModels
             double totalPrice = 0;
             foreach (Item I in cartItems)
             {
-                totalPrice += I.Price * (double)I.Quantity;
+                totalPrice += I.Price;
             }
 
             return totalPrice;
@@ -192,25 +188,23 @@ namespace BLZ.Client.ViewModels
 
         public int GetCartItemsCount(ObservableCollection<Item> cartItems)
         {
-            int quantity = 0;
-            foreach (var item in cartItems)
-            {
-                quantity += item.Quantity;
-            }
-
-            return quantity;
+            return cartItems.Count;
         }
 
         [RelayCommand]
         private void AddQuantity(Item item)
         {
+            /*
             item.Quantity++;
+            */
         }
         [RelayCommand]
         private void RemoveQuantity(Item item)
         {
+            /*
             if(item.Quantity > 1)
                 item.Quantity--;
+            */
         }
 
      

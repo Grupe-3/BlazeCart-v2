@@ -59,10 +59,9 @@ namespace BLZ.Client.Services
         {
             await Init();
 
-            Item item = await _db.Table<Item>().Where(x => x.NameLT == favoriteItem.NameLT && x.Merch == favoriteItem.Merch).FirstOrDefaultAsync();
+            Item item = await _db.Table<Item>().Where(x => x.NameLT == favoriteItem.NameLT && x.Merchant == favoriteItem.Merchant).FirstOrDefaultAsync();
             if (item != null)
             {
-                item.IsFavorite = true;
                 await _db.UpdateAsync(item);
             }
             else{
@@ -83,9 +82,7 @@ namespace BLZ.Client.Services
             await Init();
             var favIt = await _db.GetAllWithChildrenAsync<Item>();
 
-            var favoriteItems =  favIt.Where(item => item.IsFavorite == true);
-            
-            return favoriteItems;
+            return favIt;
         }
 
     }

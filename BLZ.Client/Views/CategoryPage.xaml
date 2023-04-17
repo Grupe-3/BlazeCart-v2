@@ -50,6 +50,12 @@
                                             <Grid.RowDefinitions>
                                                 <RowDefinition Height="110" />
                                             </Grid.RowDefinitions>
+                                            <Image Grid.Row="0"
+                                                   Grid.Column="0"
+                                                   Margin="0.8"
+                                                   Source="https://cpmr-islands.org/wp-content/uploads/sites/4/2019/07/test.png"
+                                                   HeightRequest="95"
+                                                   MaximumHeightRequest="95" />
                                             <VerticalStackLayout Grid.Column="1"
                                                                  Grid.Row="0">
                                                 <Label VerticalOptions="Center"
