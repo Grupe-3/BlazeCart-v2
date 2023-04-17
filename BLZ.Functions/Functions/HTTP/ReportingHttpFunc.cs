@@ -35,9 +35,9 @@ namespace BLZ.Functions.Functions.HTTP
             => await req.OkResp(await _reportRepo.GetReportsForItemAsync(id));
 
         [Function("HttpReportsMarkUserAsSpam")]
-        public async Task<HttpResponseData> ReportMarkUserAsSpam([HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = Routes.ReportMarkAsSpam)] HttpRequestData req, string user_id)
+        public async Task<HttpResponseData> ReportMarkUserAsSpam([HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = Routes.ReportMarkAsSpam)] HttpRequestData req, string id)
         {
-            await _reportRepo.MarkAsSpamAsync(user_id);
+            await _reportRepo.MarkAsSpamAsync(id);
             return await req.Ok("Marked user!");
         }
 

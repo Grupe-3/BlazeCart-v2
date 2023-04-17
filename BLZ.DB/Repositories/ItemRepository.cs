@@ -35,7 +35,7 @@ namespace BLZ.DB.Repositories
                 query = query.Where(i => i.Merchant == merchant);
             }
             query = query.Where(i => i.Price != 0 && i.NameLT != null && i.NameLT.Length >= 4);
-            return await query.OrderBy(i => i.NameLT).ToListAsync();
+            return await query.OrderBy(i => i.Id).ToListAsync();
         }
 
         public async Task<List<string>> GetItemCategoriesAsync()

@@ -24,12 +24,12 @@ namespace BLZ.Functions.Functions.HTTP
             => await req.OkResp(await _itemRepository.GetItemCategoriesAsync());
 
         [Function("HttpItemsGetByCategory")]
-        public async Task<HttpResponseData> ItemsGetByCategory([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = Routes.ItemsGetByCategory)] HttpRequestData req, string cat)
-            => await req.OkResp(await _itemRepository.GetItemsByCategoryAndMerchantAsync(cat, null));
+        public async Task<HttpResponseData> ItemsGetByCategory([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = Routes.ItemsGetByCategory)] HttpRequestData req, string category)
+            => await req.OkResp(await _itemRepository.GetItemsByCategoryAndMerchantAsync(category, null));
 
         [Function("HttpItemsGetByCategoryRange")]
-        public async Task<HttpResponseData> ItemsGetByCategoryRange([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = Routes.ItemsGetByCategoryRange)] HttpRequestData req, string cat, int index, int count)
-            => await req.OkResp((await _itemRepository.GetItemsByCategoryAndMerchantAsync(cat, null)).Skip(index).Take(count));
+        public async Task<HttpResponseData> ItemsGetByCategoryRange([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = Routes.ItemsGetByCategoryRange)] HttpRequestData req, string category, int index, int count)
+            => await req.OkResp((await _itemRepository.GetItemsByCategoryAndMerchantAsync(category, null)).Skip(index).Take(count));
 
         [Function("HttpItemsGetRange")]
         public async Task<HttpResponseData> ItemsGetRange([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = Routes.ItemsGetRange)] HttpRequestData req, int index, int count)
